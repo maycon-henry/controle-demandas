@@ -1,0 +1,80 @@
+# Blueprint da Render: aplicação web (Docker) + PostgreSQL gerenciado.
+# Cada push na branch main dispara um deploy, depois que o CI do GitHub passar.
+# Não há região no Brasil na Render; "virginia" é a mais próxima (seção 10 recomenda Brasil).
+
+databases:
+  - name: prazocerto-db
+    databaseName: prazocerto
+    user: prazocerto
+    plan: basic-256mb
+    region: virginia
+    postgresMajorVersion: "16"
+
+services:
+  - type: web
+    name: prazocerto
+    runtime: docker
+    plan: starter
+    region: virginia
+    branch: main
+    autoDeployTrigger: checksPass
+    healthCheckPath: /up
+    envVars:
+      - key: APP_NAME
+        value: Prazo Certo
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        sync: false
+      - key: APP_LOCALE
+        value: pt_BR
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_URL
+        fromDatabase:
+          name: prazocerto-db
+          property: connectionString
+      - key: DB_SSLMODE
+        value: prefer
+      - key: SESSION_DRIVER
+        value: database
+      - key: SESSION_LIFETIME
+        value: "720"
+      - key: SESSION_SECURE_COOKIE
+        value: "true"
+      - key: SESSION_SAME_SITE
+        value: lax
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: LOG_LEVEL
+        value: warning
+      # E-mails de convite e redefinição de senha (preencha no painel da Render).
+      - key: MAIL_MAILER
+        value: smtp
+      - key: MAIL_HOST
+        sync: false
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      - key: MAIL_FROM_ADDRESS
+        sync: false
+      - key: MAIL_FROM_NAME
+        value: Prazo Certo
+      # Primeiro gestor, criado no primeiro deploy (troca de senha obrigatória no 1º acesso).
+      - key: GESTOR_NOME
+        sync: false
+      - key: GESTOR_EMAIL
+        sync: false
+      - key: GESTOR_SENHA
+        sync: false

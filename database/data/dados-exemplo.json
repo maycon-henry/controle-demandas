@@ -1,0 +1,199 @@
+[
+  {
+    "id": "t01",
+    "entrada": "2026-10-26T09:10", "cliente": "Padaria Sol Nascente",
+    "descricao": "Apurar e transmitir o PGDAS de outubro.",
+    "canal": "E-mail", "setor": "Fiscal", "responsavel": "Ana Souza",
+    "acordoEm": "2026-10-26T09:30", "prazo": "2026-10-28T12:00", "primeiroHorario": false,
+    "fim": "2026-10-28T11:20", "obs": "",
+    "conclusao": "PGDAS transmitido, recibo e DAS enviados ao cliente por e-mail às 11h20.",
+    "etapas": [
+      {"txt": "Conferir notas de saída", "feita": true, "em": "2026-10-27T10:00"},
+      {"txt": "Apurar o PGDAS", "feita": true, "em": "2026-10-28T10:30"},
+      {"txt": "Enviar DAS ao cliente", "feita": true, "em": "2026-10-28T11:20"}
+    ],
+    "acoes": [
+      {"em": "2026-10-27T10:00", "txt": "Notas de saída importadas e conferidas."},
+      {"em": "2026-10-28T10:30", "txt": "Apuração concluída, sem pendências."}
+    ],
+    "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-26T09:12", "txt": "Tarefa lançada (E-mail) para Ana Souza."},
+      {"em": "2026-10-27T10:00", "txt": "Etapa concluída: Conferir notas de saída"},
+      {"em": "2026-10-28T10:30", "txt": "Etapa concluída: Apurar o PGDAS"},
+      {"em": "2026-10-28T11:20", "txt": "Finalizada: PGDAS transmitido, recibo e DAS enviados ao cliente por e-mail às 11h20."}
+    ],
+    "criadoEm": "2026-10-26T12:12:00.000Z", "atualizadoEm": "2026-10-28T14:20:00.000Z"
+  },
+  {
+    "id": "t02",
+    "entrada": "2026-10-27T14:05", "cliente": "Auto Peças Ribeiro",
+    "descricao": "Calcular rescisão sem justa causa do funcionário Marcos Lima.",
+    "canal": "WhatsApp", "setor": "Pessoal", "responsavel": "Bruno Alves",
+    "acordoEm": "2026-10-27T14:30", "prazo": "2026-10-28T17:00", "primeiroHorario": false,
+    "fim": "2026-10-28T18:10", "obs": "",
+    "conclusao": "TRCT e guia de FGTS rescisório enviados pelo WhatsApp do cliente. Entregue 1h10 após o prazo.",
+    "etapas": [
+      {"txt": "Receber aviso prévio assinado", "feita": true, "em": "2026-10-27T16:00"},
+      {"txt": "Calcular verbas", "feita": true, "em": "2026-10-28T15:00"},
+      {"txt": "Gerar guias", "feita": true, "em": "2026-10-28T18:10"}
+    ],
+    "acoes": [
+      {"em": "2026-10-28T15:00", "txt": "Verbas calculadas; aguardando conferência das férias vencidas."}
+    ],
+    "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-27T14:07", "txt": "Tarefa lançada (WhatsApp) para Bruno Alves."},
+      {"em": "2026-10-28T18:10", "txt": "Finalizada: TRCT e guia de FGTS rescisório enviados pelo WhatsApp do cliente. Entregue 1h10 após o prazo."}
+    ],
+    "criadoEm": "2026-10-27T17:07:00.000Z", "atualizadoEm": "2026-10-28T21:10:00.000Z"
+  },
+  {
+    "id": "t03",
+    "entrada": "2026-10-21T10:00", "cliente": "Clínica Vida Plena",
+    "descricao": "Renovar o alvará de funcionamento junto à prefeitura.",
+    "canal": "Ligação", "setor": "Legalização", "responsavel": "Carla Mendes",
+    "acordoEm": "2026-10-21T10:20", "prazo": "2026-10-29T08:00", "primeiroHorario": true,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [
+      {"txt": "Solicitar contrato social atualizado", "feita": true, "em": "2026-10-22T09:00"},
+      {"txt": "Emitir certidões negativas", "feita": true, "em": "2026-10-27T11:00"},
+      {"txt": "Preencher requerimento", "feita": false, "em": ""},
+      {"txt": "Protocolar na prefeitura", "feita": false, "em": ""}
+    ],
+    "acoes": [
+      {"em": "2026-10-22T09:00", "txt": "Pedido do contrato social enviado ao cliente."},
+      {"em": "2026-10-27T11:00", "txt": "Certidões federal, estadual e municipal emitidas."},
+      {"em": "2026-10-28T17:45", "txt": "Tentativa de protocolo: sistema da prefeitura fora do ar."}
+    ],
+    "adiamentos": [
+      {"de": "2026-10-27T18:00", "para": "2026-10-28T18:00", "em": "2026-10-27T17:40", "motivo": "Cliente não enviou o contrato social assinado"},
+      {"de": "2026-10-28T18:00", "para": "2026-10-29T08:00", "em": "2026-10-28T17:50", "motivo": "Sistema da prefeitura fora do ar"}
+    ],
+    "eventos": [
+      {"em": "2026-10-21T10:22", "txt": "Tarefa lançada (Ligação) para Carla Mendes."},
+      {"em": "2026-10-27T17:40", "txt": "Adiada de 27/10/26 18h00 para 28/10/26 18h00. Motivo: Cliente não enviou o contrato social assinado."},
+      {"em": "2026-10-28T17:50", "txt": "Adiada de 28/10/26 18h00 para 29/10/26 08h00 (primeiro horário). Motivo: Sistema da prefeitura fora do ar."}
+    ],
+    "criadoEm": "2026-10-21T13:22:00.000Z", "atualizadoEm": "2026-10-28T20:50:00.000Z"
+  },
+  {
+    "id": "t04",
+    "entrada": "2026-10-20T08:40", "cliente": "Mercado Bom Preço",
+    "descricao": "Conciliação bancária de setembro (Banco do Brasil e Sicoob).",
+    "canal": "E-mail", "setor": "Contábil", "responsavel": "Diego Rocha",
+    "acordoEm": "2026-10-20T09:00", "prazo": "2026-10-25T18:00", "primeiroHorario": false,
+    "fim": "", "obs": "Faltam extratos do Sicoob", "conclusao": "",
+    "etapas": [
+      {"txt": "Importar extrato BB", "feita": true, "em": "2026-10-23T14:00"},
+      {"txt": "Importar extrato Sicoob", "feita": false, "em": ""},
+      {"txt": "Conciliar lançamentos", "feita": false, "em": ""}
+    ],
+    "acoes": [
+      {"em": "2026-10-23T14:00", "txt": "Extrato do BB importado."},
+      {"em": "2026-10-28T09:15", "txt": "Cobrado novamente o extrato do Sicoob por WhatsApp."}
+    ],
+    "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-20T08:42", "txt": "Tarefa lançada (E-mail) para Diego Rocha."},
+      {"em": "2026-10-23T14:00", "txt": "Etapa concluída: Importar extrato BB"}
+    ],
+    "criadoEm": "2026-10-20T11:42:00.000Z", "atualizadoEm": "2026-10-28T12:15:00.000Z"
+  },
+  {
+    "id": "t05",
+    "entrada": "2026-10-28T08:15", "cliente": "Restaurante Sabor da Casa",
+    "descricao": "Emitir guia de ICMS de outubro com diferencial de alíquota.",
+    "canal": "Ligação", "setor": "Fiscal", "responsavel": "Ana Souza",
+    "acordoEm": "2026-10-28T08:20", "prazo": "2026-10-29T10:00", "primeiroHorario": false,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [], "acoes": [], "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-28T08:17", "txt": "Tarefa lançada (Ligação) para Ana Souza."}
+    ],
+    "criadoEm": "2026-10-28T11:17:00.000Z", "atualizadoEm": "2026-10-28T11:17:00.000Z"
+  },
+  {
+    "id": "t06",
+    "entrada": "2026-10-28T10:40", "cliente": "Construtora Alicerce",
+    "descricao": "Admissão de 2 pedreiros com início em 03/11.",
+    "canal": "WhatsApp", "setor": "Pessoal", "responsavel": "Bruno Alves",
+    "acordoEm": "2026-10-28T10:50", "prazo": "2026-10-30T17:00", "primeiroHorario": false,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [
+      {"txt": "Receber documentos dos funcionários", "feita": true, "em": "2026-10-28T14:00"},
+      {"txt": "Exame admissional", "feita": false, "em": ""},
+      {"txt": "Cadastrar no eSocial", "feita": false, "em": ""},
+      {"txt": "Enviar contratos para assinatura", "feita": false, "em": ""}
+    ],
+    "acoes": [
+      {"em": "2026-10-28T14:00", "txt": "Documentos recebidos e conferidos."}
+    ],
+    "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-28T10:42", "txt": "Tarefa lançada (WhatsApp) para Bruno Alves."}
+    ],
+    "criadoEm": "2026-10-28T13:42:00.000Z", "atualizadoEm": "2026-10-28T17:00:00.000Z"
+  },
+  {
+    "id": "t07",
+    "entrada": "2026-10-28T15:20", "cliente": "Studio Arte & Forma",
+    "descricao": "Alteração contratual para inclusão de novo sócio.",
+    "canal": "E-mail", "setor": "Societário", "responsavel": "Carla Mendes",
+    "acordoEm": "2026-10-28T15:45", "prazo": "2026-11-05T18:00", "primeiroHorario": false,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [], "acoes": [], "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-28T15:22", "txt": "Tarefa lançada (E-mail) para Carla Mendes."}
+    ],
+    "criadoEm": "2026-10-28T18:22:00.000Z", "atualizadoEm": "2026-10-28T18:22:00.000Z"
+  },
+  {
+    "id": "t08",
+    "entrada": "2026-10-27T11:30", "cliente": "Transportes Rota Sul",
+    "descricao": "Simular parcelamento dos débitos na PGFN.",
+    "canal": "Mensagem (SMS/Direct)", "setor": "Parcelamentos", "responsavel": "Diego Rocha",
+    "acordoEm": "2026-10-27T11:40", "prazo": "2026-10-29T08:30", "primeiroHorario": true,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [],
+    "acoes": [
+      {"em": "2026-10-28T15:20", "txt": "Sem acesso ao e-CAC; procuração eletrônica pendente."}
+    ],
+    "adiamentos": [
+      {"de": "2026-10-28T16:00", "para": "2026-10-29T08:30", "em": "2026-10-28T15:30", "motivo": "Aguardando procuração no e-CAC"}
+    ],
+    "eventos": [
+      {"em": "2026-10-27T11:32", "txt": "Tarefa lançada (Mensagem (SMS/Direct)) para Diego Rocha."},
+      {"em": "2026-10-28T15:30", "txt": "Adiada de 28/10/26 16h00 para 29/10/26 08h30 (primeiro horário). Motivo: Aguardando procuração no e-CAC."}
+    ],
+    "criadoEm": "2026-10-27T14:32:00.000Z", "atualizadoEm": "2026-10-28T18:30:00.000Z"
+  },
+  {
+    "id": "t09",
+    "entrada": "2026-10-28T09:00", "cliente": "Padaria Sol Nascente",
+    "descricao": "Retificar a DCTFWeb de agosto (erro no INSS patronal).",
+    "canal": "Sistema/Portal", "setor": "Reprocessamento de guias", "responsavel": "Ana Souza",
+    "acordoEm": "2026-10-28T09:10", "prazo": "2026-10-28T17:00", "primeiroHorario": false,
+    "fim": "2026-10-28T16:30", "obs": "",
+    "conclusao": "DCTFWeb retificada e nova guia emitida; recibo anexado no portal do cliente.",
+    "etapas": [], "acoes": [], "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-28T09:02", "txt": "Tarefa lançada (Sistema/Portal) para Ana Souza."},
+      {"em": "2026-10-28T16:30", "txt": "Finalizada: DCTFWeb retificada e nova guia emitida; recibo anexado no portal do cliente."}
+    ],
+    "criadoEm": "2026-10-28T12:02:00.000Z", "atualizadoEm": "2026-10-28T19:30:00.000Z"
+  },
+  {
+    "id": "t10",
+    "entrada": "2026-10-28T11:00", "cliente": "Mercado Bom Preço",
+    "descricao": "Solicitar extratos bancários e de cartões de outubro.",
+    "canal": "Mensagem (SMS/Direct)", "setor": "Contábil", "responsavel": "Eduardo Lima",
+    "acordoEm": "", "prazo": "2026-10-29T12:00", "primeiroHorario": false,
+    "fim": "", "obs": "", "conclusao": "",
+    "etapas": [], "acoes": [], "adiamentos": [],
+    "eventos": [
+      {"em": "2026-10-28T11:02", "txt": "Tarefa lançada (Mensagem (SMS/Direct)) para Eduardo Lima."}
+    ],
+    "criadoEm": "2026-10-28T14:02:00.000Z", "atualizadoEm": "2026-10-28T14:02:00.000Z"
+  }
+]

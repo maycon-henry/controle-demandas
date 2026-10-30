@@ -1,0 +1,17 @@
+{
+    "name": "Prazo Certo · Controle de Demandas",
+    "short_name": "Prazo Certo",
+    "description": "Controle de demandas da Bitarães Assessoria e Consultoria Contábil",
+    "lang": "pt-BR",
+    "start_url": "/relatorio",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#13284D",
+    "theme_color": "#13284D",
+    "icons": [
+        { "src": "/icone-192.png", "sizes": "192x192", "type": "image/png" },
+        { "src": "/icone-512.png", "sizes": "512x512", "type": "image/png" },
+        { "src": "/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+        { "src": "/icone.svg", "sizes": "any", "type": "image/svg+xml" }
+    ]
+}
